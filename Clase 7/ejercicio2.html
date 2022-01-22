@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // para una matriz determinar si cada fila esta conformada por elementos iguales
+
+        let matrix1 = [
+            [1,2,3],
+            [2,3,2],
+            [2,2,2]
+        ]
+
+
+        function igualdadfilas3x3(matrix){
+            for (let i = 0; i < 3; i++){
+                if((matrix [i][0] == matrix [i][1]) && (matrix [i][1] == matrix[i][2])){
+                    console.log("Fila " + i + "Son iguales")
+                }
+                else{
+                    console.log("Fila " + i + "Son distintos")
+                }            
+            }
+        }
+
+    </script>
+</body>
+</html>

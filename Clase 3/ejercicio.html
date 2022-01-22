@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .gris{
+        background-color: gray;
+    }
+    .amarillo{
+        background-color: yellow;
+    }
+    .negro{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div id = "main"></div>
+    <script>
+        var nombres = ['Pablo','Sol','Camila','Cesar'];
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var th1 = document.createElement('th');
+        var th2 = document.createElement('th');
+        var tbody = document.createElement('tbody');
+        th1.innerText = 'id'
+        th2.innerText = 'Nombre'
+        thead.appendChild(th1);
+        thead.appendChild(th2);
+        table.appendChild(thead)
+        table.appendChild(tbody);
+        for (let index = 0; index < nombres.length; index++) {
+    // insertar esta info en la tabla
+    // generarse un tr el cual tiene que contener tdNombre y tdId
+            var tdNombre = document.createElement("td");
+            tdNombre.innerText = nombres[index]
+            var tdId = document.createElement("td");
+            tdId.innerText  = index+1
+            var trfila = document.createElement("tr");
+            trfila.appendChild(tdId);
+            trfila.appendChild(tdNombre);
+            if(((index+1) % 2) == 0){
+                trfila.className = "gris"
+            }
+            else{
+                trfila.className = "amarillo"
+            }
+            tbody.appendChild(trfila);
+
+    // la segunda parte del ejercicio es agregarle estilo a esto
+    // los estilos a agregar son:
+    // las filas pares se tienen que ver grises
+    // y las filas impares amarillas
+    //y la parte de arriba de la tabla se tiene que ver negro
+        }
+        thead.className = "negro"
+        main.appendChild(table)
+
+
+    </script>
+</body>
+</html>

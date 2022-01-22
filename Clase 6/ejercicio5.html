@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="lista">
+        <li>1</li>
+    </ul>
+
+    <button onclick="imprimir()">imprimir</button>
+    <button onclick="alerta()">ALERTA</button>
+    <script>
+
+        let lista = [1,2,3]
+        
+        function agregarlinea(lineaA){
+            lista.push(lineaA)
+        }
+     
+        function eliminartexto(lineaE){
+            let listafiltrada = lista.filter((linea) => {
+                return linea != lineaE
+            })
+            lista = listafiltrada
+        }
+        
+        
+
+        function imprimir(){
+            let ellista = document.getElementById("lista")
+            for(let i = 0; i < lista.length; i++){
+                let elli = document.createElement("li")
+                elli.innerHTML = lista[i]        
+                console.log(lista[i])
+                ellista.appendChild(elli)
+            }
+        }
+
+        function alerta(){
+            alert("hola hola")
+            let elli = document.createElement("li")
+            elli.innerText = "hola"
+            let ellista = document.getElementById("lista")
+            ellista.appendChild(elli)
+        }
+     
+    </script>
+
+</body>
+</html>

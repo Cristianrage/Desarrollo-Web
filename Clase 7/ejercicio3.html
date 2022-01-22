@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // para una matriz determinar si cada fila esta conformada por elementos iguales
+
+        let matrix1 = [
+            [1,2,3],
+            [2,3,2],
+            [2,2,2]
+        ]
+
+        //obtener promedio de los numeros del 1 al 1000
+
+        function igualdadfilas3x3(matrix){
+            for (let i = 0; i < 3; i++){
+                if((matrix [i][0] == matrix [i][1]) && (matrix [i][1] == matrix[i][2])){
+                    console.log("Fila " + i + "Son iguales")
+                }
+                else{
+                    console.log("Fila " + i + "Son distintos")
+                }            
+            }
+        }
+        function igualdadcolumnas3x3(matrix){
+            for (let i = 0; i < 3; i++){
+                if((matrix [0][i] == matrix [1][i]) && (matrix [1][i] == matrix[2][i])){
+                    console.log("Columna " + i + " Son iguales")
+                }
+                else{
+                    console.log("Columna " + i + " Son distintos")
+                }            
+            }
+        }
+
+        function promediode1a1000(){
+            let acumulador = 0
+            for (let index = 1; index <= 1000; index++) {
+                acumulador += index;
+            }
+            let promedio = acumulador / 1000
+            console.log(promedio)
+        }
+
+        function hayTresEnLineaHorizontal(matrix){
+            for (let i = 0; i < 3; i++)       const element = array[i 3;           }
+        }
+
+    </script>
+</body>
+</html>

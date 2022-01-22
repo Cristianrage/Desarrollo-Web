@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label> Ingrese un numero</label>
+    <input type="number" id="numero1">
+
+
+    <button onclick="Agregarnumero ()"></button>
+    <ul id="listadesor">
+
+    </ul>
+
+    <script>
+        /*      var Ingresarnumero = () => {
+                   var elInput = document.getElementById("numero1")
+                   
+                   var numeroingresado = elInput.value
+                   
+                   console.log("El numero ingresado es + numeroingresado") */
+        let listadoIngresado = []
+        let lista = document.getElementById("listadesor")
+        let Agregarnumero = () => {
+            let elInput = document.getElementById("numero1")
+
+            let numeroingresado = elInput.value
+
+            listadoIngresado.push(numeroingresado)
+            let elementolista = document.createElement("li")
+            elementolista.innerHTML = numeroingresado
+            elementolista.onclick("Borraelemento")
+            lista.appendChild(elementolista)
+            console.log(listadoIngresado)
+        }
+
+        let Borraelemento = () =>{
+            
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

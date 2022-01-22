@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+      /*   var alumnosactivos = ["juan", "julio", "soledad", "maria"]
+        alumnosactivos.push("Omar", "Mario")
+        alumnosactivos.unshift("juan","julio")
+
+        alumnosactivos.splice(alumnosactivos.indexOf("maria"),1, "gervasio", "benito", "nicolas")
+        alumnosactivos = alumnosactivos.filter(alumno => alumno != "juan") */
+
+        var marcas = ["Mondial", "Motomel", "Beta", "Gilera", "Zanella"]
+        var body = document.getElementsByTagName("body")
+        var div = document.createElement("div")
+        div.id = "main"
+        var table = document.createElement('table');
+        var thead = document.createElement('thead');
+        var th1 = document.createElement('th');
+        var th2 = document.createElement('th');
+        var tbody = document.createElement('tbody');
+        th1.innerText = "ID"
+        th2.innerText = "Marca"
+        thead.appendChild(th1);
+        thead.appendChild(th2);
+        table.appendChild(thead);
+        table.appendChild(tbody);
+        for(let index = 0; index < marcas.length; index++){
+            var tdMarca = document.createElement("td")
+            tdMarca.innerText = marcas[index]
+            
+        }
+
+        div.appendChild(table);
+        body[0].appendChild(div);
+
+
+    </script>
+
+</body>
+</html>

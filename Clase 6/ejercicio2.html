@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---->
+    
+    <input id="numero1" type="number">
+    
+    <input id="numero2" type="number">
+
+    <button id="boton" onclick="sumar()">Click Me</button>
+
+    <script>
+
+            
+        function sumar(){
+            let elnumero1 = document.getElementById("numero1")
+            let elnumero2 = document.getElementById("numero2")  
+            
+            let numero1 = parseInt(elnumero1.value)
+            let numero2 = parseInt(elnumero2.value)
+
+            let suma = numero1 + numero2
+
+            alert(suma)
+        }
+
+    </script>
+
+</body>
+</html>

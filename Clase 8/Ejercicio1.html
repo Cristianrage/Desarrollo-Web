@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- -->
+
+    <input type="text" id = "number1">
+    <input type="text" id = "number2">
+    <button id="button"> SUMAR </button>
+    <p id="resultado">
+        Resultado
+    </p>
+<script>
+
+    const elBoton = document.getElementById("button")
+    const elInput1 = document.getElementById("number1")
+    const elInput2 = document.getElementById("number2")
+    const elResultado = document.getElementById("resultado")
+    elBoton.addEventListener("click", function (){
+        let numero1 = elInput1.value
+        let numero2 = elInput2.value
+        let entero1 = parseInt(numero1)
+        let entero2 = parseInt(numero2)
+
+        let suma = entero1 + entero2
+        elResultado.innerHTML = suma
+    })
+
+</script>
+
+</body>
+</html>

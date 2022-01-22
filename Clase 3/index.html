@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!--    <h1 id="Titulo1">Titulo</h1>
+    <div id="div1">
+
+    </div>
+ -->
+    <div id="main"></div>
+    <script>
+/*         var titulo = document.getElementById("Titulo1")
+//        var div = document.getElementById("div1")
+        var div = document.getElementsByTagName("div")
+        titulo.innerHTML = "Clase 03" 
+        div[0].innerHTML = "<p>Bienvenidos al curso de JavaScript </p>" */
+        var main = document.getElementById("main")
+        var fragmento = document.createDocumentFragment()
+        var titulo = document.createElement("h1")
+        titulo.innerText = "Clase 02"
+        var div1 = document.createElement("div")
+        var parrafo = document.createElement("p")
+        parrafo.innerText = "Bienvenidos al curso de JavaScript"
+        fragmento.appendChild(titulo)
+        div1.appendChild(parrafo)
+        fragmento.appendChild(div1)
+        main.appendChild(fragmento)
+     </script>
+</body>
+</html>

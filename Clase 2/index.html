@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Titulo" class="Heman">He-man</h1>
+    <script>
+    //    var edad = 0
+    //    while(edad < 99){
+    //       ++edad
+    //        console.log("Mi edad es " + edad)
+    //    }
+
+    /* var numero1 = prompt("Ingrese el primer numero:") 
+    var numero2 = prompt("Ingrese el segundo numero:")
+    var operacion = prompt("Ingrese una operacion + - / *")
+    var resultado 
+    if(operacion == "+"){
+        resultado = parseInt(numero1) + parseInt(numero2)
+    }
+    if(operacion == "-"){
+        resultado = parseInt(numero1) - parseInt(numero2)
+    }
+    if(operacion == "/"){
+        resultado = parseInt(numero1) / parseInt(numero2)
+    }
+    if(operacion == "*"){
+        resultado = parseInt(numero1) * parseInt(numero2)
+    }
+
+    alert("El resultado es: " + resultado) */
+
+    //var elemento = document.getElementById("Titulo")
+
+        var array = []
+        var edad = 0
+        while(edad < 99){
+           ++edad
+           if(edad < 16){
+            array[edad] = "Tiene " + edad + " Es menor de edad"
+           }
+           else if(edad <18){
+            array[edad] = "Tiene " + edad + " Puede votar"
+           }
+           else if(edad >= 18){
+            array[edad] = "Tiene " + edad + " Es mayor de edad"
+           } 
+        }
+
+        for(index = 0; index <= array.length; index++)
+        {
+            console.log(array[index])
+        }
+
+
+
+    </script>
+</body>
+</html>
